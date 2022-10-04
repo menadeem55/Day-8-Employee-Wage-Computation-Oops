@@ -46,4 +46,5 @@ public class Emp_Wage_Problem {
 	public static void main(String[] args) {
 		EmpWage();
 	}
+	
 }
