@@ -2,6 +2,8 @@ package com.blabz.java;
 
 import java.util.ArrayList;
 
+import java.util.ArrayList;
+
 public class CompanyEmpWage {
 	private String companyName;
 	private int wagePerHr;
