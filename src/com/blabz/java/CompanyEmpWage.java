@@ -1,20 +1,23 @@
 package com.blabz.java;
 
-import java.util.*;
+import java.util.ArrayList;
 
-public class Emp_Wage_Problem {
+public class CompanyEmpWage {
 	private String companyName;
 	private int wagePerHr;
 	private int totalWorkingDays;
 	private int totalWorkingHrs;
 	private int totalEmpWage;
 
+	private ArrayList<Integer> dailyWages;
+
 	// parametrized constructor
-	public Emp_Wage_Problem(String companyName, int wagePerHr, int totalWorkingDays, int totalWorkingHrs) {
+	public CompanyEmpWage(String companyName, int wagePerHr, int totalWorkingDays, int totalWorkingHrs) {
 		this.companyName = companyName;
 		this.wagePerHr = wagePerHr;
 		this.totalWorkingDays = totalWorkingDays;
 		this.totalWorkingHrs = totalWorkingHrs;
+		dailyWages = new ArrayList<>();
 	}
 
 	public String getCompanyName() {
@@ -57,10 +60,18 @@ public class Emp_Wage_Problem {
 		this.totalEmpWage = totalEmpWage;
 	}
 
+	public ArrayList<Integer> getDailyWages() {
+		return dailyWages;
+	}
+
+	public void setDailyWages(ArrayList<Integer> dailyWages) {
+		this.dailyWages = dailyWages;
+	}
+
 	@Override
 	public String toString() {
 		return "CompanyEmpWage{" + "companyName='" + companyName + '\'' + ", wagePerHr=" + wagePerHr
 				+ ", totalWorkingDays=" + totalWorkingDays + ", totalWorkingHrs=" + totalWorkingHrs + ", totalEmpWage="
-				+ totalEmpWage + '}';
+				+ totalEmpWage + ", dailyWages=" + dailyWages + '}';
 	}
 }
